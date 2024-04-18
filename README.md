@@ -8,7 +8,7 @@ python DDOS-Hacker2024.py
 
 ## 关于程序：
 
-官方网站：https://www.hackerit.cc
+官方网站：https://www.pcntec.com/
 
 项目地址：https://github.com/GXlinyihua/DDOS-Hacker-v2024
 
