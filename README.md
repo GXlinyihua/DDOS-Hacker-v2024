@@ -1,12 +1,10 @@
-# DDOS-黑客 2024
+#DDOS-黑客 2024
 
 ##使用教程：
 
 安装python3
 
 python DDOS-Hacker2024.py
-
-![ ] (01.png )
 
 ##关于程序：
 
