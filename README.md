@@ -6,7 +6,7 @@
 
 python DDOS-Hacker2024.py
 
-![ ] ( \01.png )
+![ ] (01.png )
 
 ##关于程序：
 
