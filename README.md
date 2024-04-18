@@ -1,11 +1,10 @@
-# DDOS-黑客 2024
-
-##使用教程：
+![01](https://github.com/GXlinyihua/DDOS-Hacker2024/assets/126960597/652ada00-a4b9-47ab-89f4-9666fa1eb0d9)##使用教程：
 
 安装python3
 
 python DDOS-Hacker2024.py
-![01](https://github.com/GXlinyihua/DDOS-Hacker2024/assets/126960597/d9b8f1d5-5821-4f87-b7f6-bf731b03cb03)
+![正在上传 01.png... ] ( )
+
 ##关于程序：
 
 官方网站：https://www.hackerit.cc
