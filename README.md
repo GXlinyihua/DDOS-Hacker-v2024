@@ -1,9 +1,9 @@
-![01](https://github.com/GXlinyihua/DDOS-Hacker2024/assets/126960597/652ada00-a4b9-47ab-89f4-9666fa1eb0d9)##使用教程：
+##使用教程：()
 
 安装python3
 
 python DDOS-Hacker2024.py
-![正在上传 01.png... ] ( )
+![ 01 ] ( https://github.com/GXlinyihua/DDOS-Hacker2024/assets/126960597/652ada00-a4b9-47ab-89f4-9666fa1eb0d9 ()
 
 ##关于程序：
 
