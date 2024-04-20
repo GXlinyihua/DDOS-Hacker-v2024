@@ -16,7 +16,7 @@ ___  ____   ___  ____         __  __           __            ____   ___ ____  _ 
 |____/|____/ \___/|____/      |_| |_|\__,_|\___|_|\_\___|_| |_____|\___/_____|  |_|  
                                                                                      
 
-官方网站：https://www.pcntec.com/
+官方网站：https://www.0daysec.online/
 
 项目地址：https://github.com/GXlinyihua/DDOS-Hacker2024
 
